@@ -76,7 +76,7 @@ while 1:
             client.load_extension(ex)
         client.handle_message("""To add me to your server: =>https://discordapp.com/oauth2/authorize?client_id=277664561119625217&scope=bot&permissions=66186303
                                           \nMessage <@!95280508384063488> for more support.""")
-        client.run('Mjc3NjY0NTYxMTE5NjI1MjE3.C3hCyw.wZQ5p-uqynoJMkLziXPz-FJnKrU')
+        client.run(CLIENTID) ###Change the CLIENTID to your bot id
     except discord.HTTPException as e:
         print(e.response, e.message, file = stderr)
         pass
